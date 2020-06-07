@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+.container {
+	display: flex;
+	margin-bottom: 15px;
+    margin-top: auto;
+	position: absolute; 
+	width: 150px;
+	bottom: 450px;
+	left:  980px;
+			}
+.social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+			}
+
+.social-icons li {
+	list-style: none;
+				}
+
+.social-icons li a {
+	display: block;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 2em;
+	margin-bottom: 15px;
+	border-radius: 30%;
+	text-align: center;
+	color: #fff;
+	transition: .5s;
+	border: 2px solid #fff;
+	overflow: hidden;
+				}
+
+.social-icons li a:hover {
+	transform: scale(1.2);
+						}
+
+/* pseudo-element before */
+
+.social-icons li a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	z-index: -1;
+	transform: scale(1);
+	top: 0;
+	left: 0;
+	transition: .5s;
+}
+
+.social-icons li a:hover::before {
+	transform: scale(0);
+}
+.social-icons li:nth-child(1) a,
+.social-icons li:nth-child(1) a:before {
+	background: #3b5999;
+}
+
+.social-icons li:nth-child(2) a,
+.social-icons li:nth-child(2) a:before {
+	background: #55acee;
+}
+
+.social-icons li:nth-child(3) a,
+.social-icons li:nth-child(3) a:before {
+	background: #e4405f;
+}
+
+.social-icons li:nth-child(4) a,
+.social-icons li:nth-child(4) a:before {
+	background: #dd4b39;
+}
+
+/* Hover effect */
+.social-icons li:nth-child(1) a:hover {
+	background: #fff;
+	border: 2px dashed #3b5999;
+	color: #3b5999;
+}
+
+.social-icons li:nth-child(2) a:hover {
+	background: #fff;
+	border: 2px dashed #55acee;
+	color: #55acee;
+									}
+
+.social-icons li:nth-child(3) a:hover {
+	background: #fff;
+	border: 2px dashed #e4405f;
+	color: #e4405f;
+									}
+
+.social-icons li:nth-child(4) a:hover {
+	background: #fff;
+	border: 2px dashed #dd4b39;
+	color: #dd4b39;
+									}
+/*la segunda parte */
+.container2  {
+	position: relative; 
+	width: 25%;
+	bottom: 200px;
+	left: 1000px;
+			}
+.container2 li a {
+	display: block;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 2em;
+	margin-bottom: 15px;
+	border-radius: 70%;
+	text-align: center;
+	color: #fff;
+	transition: .2s;
+	border: 2px solid #fff;
+	overflow: hidden;
+				}
+.uwu img{
+	position:absolute;
+	left: 0px;
+	right: 0px;
+	width: 1350px;
+		}
+.formulario{
+	font-family: 'Martel Sans', sans-serif;
+	font-weight: 800;
+	color:#262525;
+	font-size: 20px;
+	position: relative;
+	margin-left: 20px;
+			}
+
+.cuerpo p{
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Martel Sans', sans-serif;
+	font-weight:300;
+	color:#232222;
+		}
+.cuerpo h1{
+	margin-left: 30%;
+	margin-right: 30%;
+	font-size: 38px;
+	color:#0e2859;
+	font-family: 'Martel Sans', sans-serif;
+	font-weight:800;
+		  }
+.cuerpo ul{
+	margin-left: 20%;
+	margin-right: 10%;
+	font-family: 'Martel Sans', sans-serif;
+	font-weight:300;
+	color:#232222;
+		}
+.cuerpo{
+  	position:relative;
+	margin-top: 450px;
+		}
+.menu li:nth-child(2) a{
+	display: none;
+		}
+@media (max-width:700px){
+	.menu li:nth-child(1) a{
+	display: none;
+		}
+	.menu li:nth-child(2) a{
+	display: block;
+		}
+	.menu > li {
+		display: flex;
+		}
+	.social-icons{
+		display: none;
+		}
+	.navegacion img{
+	display: none;
+		}
+	.imagenes{
+		display: none;
+		height: 0;
+		}
+	.menu li:nth-child(1):checked ~ .menu{
+	display: none;
+		background: #A2080B;
+		}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
